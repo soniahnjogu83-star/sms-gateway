@@ -12,7 +12,7 @@ app = FastAPI(title="SMS Gateway API", description="Receives and serves forwarde
 sms_store = []
 
 # --- API Key Auth (set your own secret key here) ---
-API_KEY = "your-secret-api-key-change-this"
+API_KEY = "njogu1234"
 api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
 
 def verify_api_key(key: str = Depends(api_key_header)):
